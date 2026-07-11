@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- ========================================== -->
+    <!-- [إعلانات الخلفية والشريط الاجتماعي] -->
+    <!-- ========================================== -->
+    <!-- Popunder Advertisement -->
+    <script src="https://pl30319566.effectivecpmnetwork.com/60/8c/08/608c08c38751241f1123b7a192a1175d.js"></script>
+    <!-- Social Bar Advertisement -->
+    <script src="https://pl30319569.effectivecpmnetwork.com/c7/8b/ec/c78bec16bb8fef8adfbebf3b04559b1d.js"></script>
+
     <style>
         /* Reset and General Setup */
         * {
@@ -169,28 +178,13 @@
             height: 100%;
         }
 
-
         .logo-img {
-    height: 60px; /* يمكنك التحكم في الطول حسب شكل اللوجو الخاص بك */
-    width: auto;   /* يحافظ على أبعاد الصورة */
-    display: block;
-    transition: 0.3s;
-}
+            height: 60px; 
+            width: auto;   
+            display: block;
+            transition: 0.3s;
+        }
 
-/* لضمان التناسق على الموبايل */
-@media (max-width: 992px) {
-    .navbar{
-        padding: 0px 25px;
-        height: 60px; /* تصغير اللوجو قليلاً في الشاشات الصغيرة */
-    }
-    .navbar.mobile-active {
-        height: auto;
-        padding: 20px;
-    }
-}
-
-        
-    
         /* Hamburger Menu for Mobile */
         .menu-toggle {
             display: none;
@@ -539,78 +533,69 @@
             box-shadow: 0 5px 15px rgba(229,169,59,0.3);
         }
        
-        /* تهيئة حاوية الصورة لاستيعاب صورتين فوق بعضهما */
-.price-img-holder {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 25px auto 25px;
-    border: 4px solid rgba(255,255,255,0.03);
-    overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-    position: relative; /* ضروري لضبط تموضع الصور بالداخل */
-}
+        .price-img-holder {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 25px auto 25px;
+            border: 4px solid rgba(255,255,255,0.03);
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+            position: relative; 
+        }
 
-/* إعدادات موحدة لكلا الصورتين */
-.price-img-holder img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out; /* تأثير ناعم ومريح للعين */
-}
+        .price-img-holder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out; 
+        }
 
-/* الحالة الافتراضية: صورة الشفاه (المخفية) */
-.price-img-holder .img-hover {
-    opacity: 0;
-}
+        .price-img-holder .img-hover {
+            opacity: 0;
+        }
 
-/* الحالة الافتراضية: صورة المنتج (الظاهرة) */
-.price-img-holder .img-main {
-    opacity: 1;
-}
+        .price-img-holder .img-main {
+            opacity: 1;
+        }
 
-/* التأثير السحري عند تمرير الماوس فوق الكارت بالكامل */
-.price-card:hover .price-img-holder .img-main {
-    opacity: 0; /* تختفي صورة المنتج */
-    transform: scale(1.05); /* زووم خفيف جداً للحركة جمالية */
-}
+        .price-card:hover .price-img-holder .img-main {
+            opacity: 0; 
+            transform: scale(1.05); 
+        }
 
-.price-card:hover .price-img-holder .img-hover {
-    opacity: 1; /* تظهر صورة العرض على الشفاه */
-    transform: scale(1.05);
-}
-
-
+        .price-card:hover .price-img-holder .img-hover {
+            opacity: 1; 
+            transform: scale(1.05);
+        }
 
         /* Footer */
-       /* الفوتر المحدث بدعم الخلفيات المتغيرة */
-footer {
-    position: relative; /* ضروري لضبط تموضع الطبقة المعتمة */
-    background-color: #0b060a; /* لون احتياطي قبل تحميل الصور */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 80px 8% 30px;
-    text-align: center;
-    border-top: 1px solid rgba(255,255,255,0.05);
-    transition: background-image 1.5s ease-in-out; /* تأثير ناعم جداً عند تلاشي وتبدل الصور */
-    z-index: 1;
-}
+        footer {
+            position: relative; 
+            background-color: #0b060a; 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 80px 8% 30px;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            transition: background-image 1.5s ease-in-out; 
+            z-index: 1;
+        }
 
-/* إضافة طبقة معتمة (Overlay) خلف النص لضمان وضوح الكلمات فوق أي صورة */
-footer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background:linear-gradient(to bottom, rgb(11 6 10 / 54%), rgba(18, 11, 16, 0.95)); /* تعتيم متدرج فخم */
-    z-index: -1; /* لجعل الطبقة خلف النصوص مباشرة */
-}
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:linear-gradient(to bottom, rgb(11 6 10 / 54%), rgba(18, 11, 16, 0.95)); 
+            z-index: -1; 
+        }
 
         .footer-logo h2 { font-family: 'Playfair Display', serif; font-size: 2.8rem; color: var(--text-light); margin-bottom: 25px; }
         .footer-logo h2 span { color: var(--accent-gold); }
@@ -680,10 +665,49 @@ footer::before {
         }
         .scroll-top:hover { background: var(--accent-gold); color: var(--bg-dark); }
 
+        /* ========================================== */
+        /* [تنسيقات إضافية لحاويات الإعلانات] */
+        /* ========================================== --> */
+        .ad-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px auto;
+            padding: 10px;
+            overflow: hidden;
+        }
+        /* عرض البانرات الطويلة على الأجهزة المكتبية فقط وإخفاؤها على الهواتف */
+        .desktop-ad { display: flex; }
+        .mobile-ad { display: none; }
+
+        @media (max-width: 768px) {
+            .desktop-ad { display: none; }
+            .mobile-ad { display: flex; }
+        }
+
+        /* تنسيق الأشرطة الجانبية العائمة (بينما تتناسب مع التصميم اللطيف والمظلم) */
+        .sidebar-ad-left, .sidebar-ad-right {
+            position: fixed;
+            top: 150px;
+            width: 160px;
+            height: 600px;
+            z-index: 90;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .sidebar-ad-left { left: 10px; }
+        .sidebar-ad-right { right: 10px; }
+
+        @media (max-width: 1400px) {
+            /* إخفاء البنرات الجانبية الطويلة إذا كانت الشاشة ضيقة حتى لا تغطي على المحتوى */
+            .sidebar-ad-left, .sidebar-ad-right { display: none; }
+        }
+
         /* ==========================================================================
            RESPONSIVENESS (Media Queries for all devices)
            ========================================================================== */
-        
         @media (max-width: 1200px) {
             .slide-content h2 { font-size: 3rem; }
             .about-grid { gap: 20px; }
@@ -693,15 +717,15 @@ footer::before {
 
         @media (max-width: 992px) {
             header { padding: 10px 40px 0 40px; }
-            .navbar { padding: 10px 25px; }
-            .navbar .nav-links { display: none; } /* Hide for mobile layout */
+            .navbar { padding: 10px 25px; height: 60px; }
+            .navbar .nav-links { display: none; } 
             .menu-toggle { display: flex; }
             
-            /* Responsive active mobile menu */
             .navbar.mobile-active {
                 flex-direction: column;
                 border-radius: 25px;
                 padding: 20px;
+                height: auto;
             }
             .navbar.mobile-active .nav-links {
                 display: flex;
@@ -718,7 +742,7 @@ footer::before {
             .slide-image-container { width: 100%; }
             
             .about-grid { grid-template-columns: 1fr; }
-            .about-img { min-height: 350px; order: -1; } /* put image on top on mobile */
+            .about-img { min-height: 350px; order: -1; } 
             
             .promo-banner { flex-direction: column; }
             .promo-video-side, .promo-text-side { width: 100%; }
@@ -731,7 +755,7 @@ footer::before {
         }
 
         @media (max-width: 576px) {
-            .top-bar { display: none; } /* Clean up space on very small screens */
+            .top-bar { display: none; } 
             .slide-content h2 { font-size: 2.3rem; }
             .slide-image-wrapper { height: 350px; }
             .pricing-grid { grid-template-columns: 1fr; }
@@ -743,6 +767,28 @@ footer::before {
     </style>
 </head>
 <body>
+
+    <!-- ========================================== -->
+    <!-- [إعلانات الإطارات الجانبية الطويلة العائمة] -->
+    <!-- ========================================== -->
+    <!-- Left Sidebar Ads (160x600 & 160x300) -->
+    <div class="sidebar-ad-left">
+        <!-- Banner 160x600 -->
+        <script>
+            atOptions = { 'key' : 'f5f70f4a539880e9a70b7648b378e914', 'format' : 'iframe', 'height' : 600, 'width' : 160, 'params' : {} };
+        </script>
+        <script src="https://www.highperformanceformat.com/f5f70f4a539880e9a70b7648b378e914/invoke.js"></script>
+    </div>
+
+    <!-- Right Sidebar Ads (160x600 & 160x300) -->
+    <div class="sidebar-ad-right">
+        <!-- Banner 160x300 -->
+        <script>
+            atOptions = { 'key' : 'f9fbd3eeb5352ed6fce8b28c0cebef4f', 'format' : 'iframe', 'height' : 300, 'width' : 160, 'params' : {} };
+        </script>
+        <script src="https://www.highperformanceformat.com/f9fbd3eeb5352ed6fce8b28c0cebef4f/invoke.js"></script>
+    </div>
+
 
     <!-- Top Bar -->
     <div class="top-bar">
@@ -767,14 +813,11 @@ footer::before {
                 <a href="#products">Products</a>
             </div>
             
-<!-- بهذا الجزء -->
-<div class="logo">
-    <a href="#">
-        <img src="1783294438280.png" alt="iGLOSS Logo" class="logo-img">
-    </a>
-</div>
-
-
+            <div class="logo">
+                <a href="#">
+                    <img src="1783294438280.png" alt="iGLOSS Logo" class="logo-img">
+                </a>
+            </div>
 
             <div class="nav-links">
                 <a href="#services">Services</a>
@@ -789,6 +832,25 @@ footer::before {
         </nav>
     </header>
 
+    <!-- ========================================== -->
+    <!-- [إعلان علوي أسفل الهيدر مباشرة] -->
+    <!-- ========================================== -->
+    <div class="ad-container desktop-ad">
+        <!-- Banner 728x90 للشاشات الكبيرة -->
+        <script>
+            atOptions = { 'key' : '7ec4a55f4ce913eda8672367fca75300', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} };
+        </script>
+        <script src="https://www.highperformanceformat.com/7ec4a55f4ce913eda8672367fca75300/invoke.js"></script>
+    </div>
+    <div class="ad-container mobile-ad">
+        <!-- Banner 320x50 للهواتف المحمولة -->
+        <script>
+            atOptions = { 'key' : '10c52be9fed3e869a77db84c8d93254a', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} };
+        </script>
+        <script src="https://www.highperformanceformat.com/10c52be9fed3e869a77db84c8d93254a/invoke.js"></script>
+    </div>
+
+
     <!-- Hero / Slider Section with Content Images -->
     <section class="hero">
         <div class="slider-container">
@@ -796,11 +858,11 @@ footer::before {
                 <h3>PREMIUM LUXURY SHINE</h3>
                 <h2>Made From Our Own Organic Oils</h2>
                 <p>Experience the ultimate blend of lightweight hydration, high-intensity luster, and gorgeous rich shades crafted carefully with absolute organic botanical oils.</p>
-                <button class="btn-pink">Learn More</button>
+                <!-- تضمين رابط ذكي Smartlink على زر التشغيل الرئيسي -->
+                <button class="btn-pink" onclick="window.open('https://www.effectivecpmnetwork.com/vmfzbhzcg?key=fd5d49a5c256d9f775c15d7cd8ecd063', '_blank')">Learn More (Smartlink)</button>
             </div>
             <div class="slide-image-container">
                 <div class="slide-image-wrapper">
-                    <!-- Premium Dark-Themed Lip Gloss image -->
                     <img src="https://images.unsplash.com/photo-1617422275558-e5f6163026b2?w=600&auto=format&fit=crop" alt="Premium Lip Gloss Lip">
                 </div>
             </div>
@@ -812,12 +874,21 @@ footer::before {
     <!-- About & Features Section -->
     <section id="about" class="about-section">
         <h2 class="section-title">Enchanting Lip Beauty <span>Since 2020</span></h2>
+        
+        <!-- ========================================== -->
+        <!-- [إعلان مدمج Native Banner داخل قسم من نحن] -->
+        <!-- ========================================== -->
+        <div class="ad-container" style="max-width: 900px;">
+            <script async="async" data-cfasync="false" src="https://pl30319567.effectivecpmnetwork.com/ce05badd8b3dddc6c28d41c4f0e25b4f/invoke.js"></script>
+            <div id="container-ce05badd8b3dddc6c28d41c4f0e25b4f" style="width:100%;"></div>
+        </div>
+
         <div class="about-grid">
             <div class="about-box">
                 <h3>About Us</h3>
                 <p>We redefine luxury cosmetics by providing intense, mirror-like gloss shine without any of the stickiness. Our collection nourishes while making a bold statement.</p>
                 <p>Every single formula is enriched with pure Vitamin E, jojoba extracts, and elegant organic elements designed for modern elegance.</p>
-                <button class="btn-gold">Learn More</button>
+                <button class="btn-gold" onclick="window.open('https://www.effectivecpmnetwork.com/vmfzbhzcg?key=fd5d49a5c256d9f775c15d7cd8ecd063', '_blank')">Learn More</button>
             </div>
             <div class="about-img">
                 <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=600&auto=format&fit=crop" alt="Luxury Cosmetics Packaging">
@@ -830,7 +901,7 @@ footer::before {
                     <li><i class="fas fa-check-circle"></i> 24-Hour Continuous Hydration</li>
                     <li><i class="fas fa-check-circle"></i> Non-Sticky Ultra-Light Formula</li>
                 </ul>
-                <button class="btn-pink">Explore All</button>
+                <button class="btn-pink" onclick="window.open('https://www.effectivecpmnetwork.com/vmfzbhzcg?key=fd5d49a5c256d9f775c15d7cd8ecd063', '_blank')">Explore All</button>
             </div>
         </div>
     </section>
@@ -839,7 +910,7 @@ footer::before {
     <section class="promo-banner">
         <div class="promo-video-side">
             <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&auto=format&fit=crop" alt="Gloss Overlay Dark">
-            <div class="play-btn">
+            <div class="play-btn" onclick="window.open('https://www.effectivecpmnetwork.com/vmfzbhzcg?key=fd5d49a5c256d9f775c15d7cd8ecd063', '_blank')">
                 <i class="fas fa-play"></i>
             </div>
         </div>
@@ -848,10 +919,22 @@ footer::before {
             <h2>Choco-Vanilla Glaze</h2>
             <p>Our award-winning seasonal deep shade glaze. Seamlessly fits day and evening looks with its rich aroma and flawless visual dimension.</p>
             <div>
-                <button class="btn-gold">Order Now</button>
+                <button class="btn-gold" onclick="window.open('https://www.effectivecpmnetwork.com/vmfzbhzcg?key=fd5d49a5c256d9f775c15d7cd8ecd063', '_blank')">Order Now</button>
             </div>
         </div>
     </section>
+
+    <!-- ========================================== -->
+    <!-- [إعلان أوسط متجاوب الحجم بين الأقسام] -->
+    <!-- ========================================== -->
+    <div class="ad-container desktop-ad">
+        <!-- Banner 468x60 للشاشات المتوسطة والكبيرة -->
+        <script>
+            atOptions = { 'key' : 'd85bd3d5fb6edd7cb2397a51adccce3c', 'format' : 'iframe', 'height' : 60, 'width' : 468, 'params' : {} };
+        </script>
+        <script src="https://www.highperformanceformat.com/d85bd3d5fb6edd7cb2397a51adccce3c/invoke.js"></script>
+    </div>
+
 
     <!-- Services Section -->
     <section id="services" class="services-section">
@@ -871,14 +954,18 @@ footer::before {
                 <p>Every single gloss undergoes meticulous dermatological testing and premium quality controls for perfect application stability.</p>
                 <a href="#">Learn More <i class="fas fa-arrow-right" style="font-size:0.8rem; margin-left:5px;"></i></a>
             </div>
-            <div class="service-card">
-                <div class="card-img-circle">
-                    <img src="https://images.unsplash.com/photo-1625093742435-6fa192b6fb10?w=300&auto=format&fit=crop" alt="Custom Formulation">
+            
+            <!-- إدراج كارت إعلاني مربع 300x250 كخدمة مموهة لزيادة الأرباح -->
+            <div class="service-card" style="display: flex; justify-content: center; align-items: center; padding: 20px;">
+                <div>
+                    <script>
+                        atOptions = { 'key' : '284a18b2eadef20901136f530d681a67', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };
+                    </script>
+                    <script src="https://www.highperformanceformat.com/284a18b2eadef20901136f530d681a67/invoke.js"></script>
+                    <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 5px;">Sponsored Advertisement</p>
                 </div>
-                <h3>Custom Shades</h3>
-                <p>Personalize your own signature tint density and customized aromatic glitter finishes at our exclusive beauty bars.</p>
-                <a href="#">Learn More <i class="fas fa-arrow-right" style="font-size:0.8rem; margin-left:5px;"></i></a>
             </div>
+
             <div class="service-card">
                 <div class="card-img-circle">
                     <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=300&auto=format&fit=crop" alt="Luxury Packaging Boxes">
@@ -903,59 +990,58 @@ footer::before {
     </section>
 
     <!-- Pricing / Products Section -->
-   <section id="products" class="pricing-section">
-    <h2 class="section-title">The Absolute Best <span>Prices & Formulas</span></h2>
-    <div class="pricing-grid">
-        <div class="price-card">
-            <div class="badge-price-circle"><span>$9.99</span></div>
-            <div class="price-img-holder">
-                <img src="1783372438410.png" alt="Clear Crystal Plump" class="img-main">
-                <img src="2_ec48174d-8c21-4016-90cd-42f4f688dae0.webp" alt="Clear Crystal Plump on Lips" class="img-hover">
+    <section id="products" class="pricing-section">
+        <h2 class="section-title">The Absolute Best <span>Prices & Formulas</span></h2>
+        <div class="pricing-grid">
+            <div class="price-card">
+                <div class="badge-price-circle"><span>$9.99</span></div>
+                <div class="price-img-holder">
+                    <img src="1783372438410.png" alt="Clear Crystal Plump" class="img-main">
+                    <img src="2_ec48174d-8c21-4016-90cd-42f4f688dae0.webp" alt="Clear Crystal Plump on Lips" class="img-hover">
+                </div>
+                <h3>Clear Crystal Plump</h3>
+                <button class="btn-pink add-to-cart-btn" data-id="1" data-name="Clear Crystal Plump" data-price="9.99" data-img="1783372438410.png">
+                    <i class="fas fa-shopping-cart" style="margin-right: 8px;"></i> Order Now
+                </button>
             </div>
-            <h3>Clear Crystal Plump</h3>
-            <button class="btn-pink add-to-cart-btn" data-id="1" data-name="Clear Crystal Plump" data-price="9.99" data-img="1783372438410.png">
-                <i class="fas fa-shopping-cart" style="margin-right: 8px;"></i> Order Now
-            </button>
-        </div>
 
-        <div class="price-card">
-            <div class="badge-price-circle"><span>$11.99</span></div>
-            <div class="price-img-holder">
-                <img src="https://images.unsplash.com/photo-1631730359575-38e4755d772b?w=300&auto=format&fit=crop" alt="Midnight Rose Tint" class="img-main">
-                <img src="4_316fd4e9-add4-4903-a87a-c607df9852ae.webp" alt="Midnight Rose Tint on Lips" class="img-hover">
+            <div class="price-card">
+                <div class="badge-price-circle"><span>$11.99</span></div>
+                <div class="price-img-holder">
+                    <img src="https://images.unsplash.com/photo-1631730359575-38e4755d772b?w=300&auto=format&fit=crop" alt="Midnight Rose Tint" class="img-main">
+                    <img src="4_316fd4e9-add4-4903-a87a-c607df9852ae.webp" alt="Midnight Rose Tint on Lips" class="img-hover">
+                </div>
+                <h3>Midnight Rose Tint</h3>
+                <button class="btn-pink add-to-cart-btn" data-id="2" data-name="Midnight Rose Tint" data-price="11.99" data-img="https://images.unsplash.com/photo-1631730359575-38e4755d772b?w=300&auto=format&fit=crop">
+                    <i class="fas fa-shopping-cart" style="margin-right: 8px;"></i> Order Now
+                </button>
             </div>
-            <h3>Midnight Rose Tint</h3>
-            <button class="btn-pink add-to-cart-btn" data-id="2" data-name="Midnight Rose Tint" data-price="11.99" data-img="https://images.unsplash.com/photo-1631730359575-38e4755d772b?w=300&auto=format&fit=crop">
-                <i class="fas fa-shopping-cart" style="margin-right: 8px;"></i> Order Now
-            </button>
-        </div>
 
-        <div class="price-card">
-            <div class="badge-price-circle"><span>$12.99</span></div>
-            <div class="price-img-holder">
-                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=300&auto=format&fit=crop" alt="Glittery Bronze" class="img-main">
-                <img src="dear-darling-water-gel-texture.webp" alt="Glittery Bronze on Lips" class="img-hover">
+            <div class="price-card">
+                <div class="badge-price-circle"><span>$12.99</span></div>
+                <div class="price-img-holder">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=300&auto=format&fit=crop" alt="Glittery Bronze" class="img-main">
+                    <img src="dear-darling-water-gel-texture.webp" alt="Glittery Bronze on Lips" class="img-hover">
+                </div>
+                <h3>Glittery Bronze</h3>
+                <button class="btn-pink add-to-cart-btn" data-id="3" data-name="Glittery Bronze" data-price="12.99" data-img="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=300&auto=format&fit=crop">
+                    <i class="fas fa-shopping-cart" style="margin-right: 8px;"></i> Order Now
+                </button>
             </div>
-            <h3>Glittery Bronze</h3>
-            <button class="btn-pink add-to-cart-btn" data-id="3" data-name="Glittery Bronze" data-price="12.99" data-img="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=300&auto=format&fit=crop">
-                <i class="fas fa-shopping-cart" style="margin-right: 8px;"></i> Order Now
-            </button>
-        </div>
 
-        <div class="price-card">
-            <div class="badge-price-circle"><span>$9.99</span></div>
-            <div class="price-img-holder">
-                <img src="https://images.unsplash.com/photo-1608248597481-496100c8c836?w=300&auto=format&fit=crop" alt="Nude Shimmer Glaze" class="img-main">
-                <img src="dear-darling-water-gel-studio.webp" alt="Nude Shimmer Glaze on Lips" class="img-hover">
+            <div class="price-card">
+                <div class="badge-price-circle"><span>$9.99</span></div>
+                <div class="price-img-holder">
+                    <img src="https://images.unsplash.com/photo-1608248597481-496100c8c836?w=300&auto=format&fit=crop" alt="Nude Shimmer Glaze" class="img-main">
+                    <img src="dear-darling-water-gel-studio.webp" alt="Nude Shimmer Glaze on Lips" class="img-hover">
+                </div>
+                <h3>Nude Shimmer Glaze</h3>
+                <button class="btn-pink add-to-cart-btn" data-id="4" data-name="Nude Shimmer Glaze" data-price="9.99" data-img="https://images.unsplash.com/photo-1608248597481-496100c8c836?w=300&auto=format&fit=crop">
+                    <i class="fas fa-shopping-cart" style="margin-right: 8px;"></i> Order Now
+                </button>
             </div>
-            <h3>Nude Shimmer Glaze</h3>
-            <button class="btn-pink add-to-cart-btn" data-id="4" data-name="Nude Shimmer Glaze" data-price="9.99" data-img="https://images.unsplash.com/photo-1608248597481-496100c8c836?w=300&auto=format&fit=crop">
-                <i class="fas fa-shopping-cart" style="margin-right: 8px;"></i> Order Now
-            </button>
         </div>
-    </div>
-</section>
-
+    </section>
 
 
     <!-- Footer Section -->
@@ -990,387 +1076,205 @@ footer::before {
     <button class="scroll-top"><i class="fas fa-angle-double-up"></i></button>
 
     <!-- ========================================== -->
-<!-- سلة المشتريات العائمة والنافذة المنبثقة -->
-<!-- ========================================== -->
-
-<!-- الزر العائم الاحترافي -->
-<div class="cart-floating-btn" id="open-cart-btn">
-    <div class="cart-icon-wrapper">
-        <i class="fas fa-shopping-basket"></i>
-        <!-- عبوة الليب جلوس المصغرة فوق السلة -->
-        <span class="mini-lipgloss-badge">💄</span>
+    <!-- سلة المشتريات العائمة والنافذة المنبثقة -->
+    <!-- ========================================== -->
+    <div class="cart-floating-btn" id="open-cart-btn">
+        <div class="cart-icon-wrapper">
+            <i class="fas fa-shopping-basket"></i>
+            <span class="mini-lipgloss-badge">💄</span>
+        </div>
+        <div class="cart-count-badge">0</div>
     </div>
-    <!-- عداد المنتجات داخل السلة -->
-    <div class="cart-count-badge">0</div>
-</div>
 
-<!-- النافذة المنبثقة (Modal Pop-up) -->
-<div class="cart-modal-overlay" id="cart-modal">
-    <div class="cart-modal-content">
-        <button class="close-modal-btn" id="close-cart-btn">&times;</button>
-        <!-- استدعاء صفحة السلة المستقلة داخل الإطار المنبثق -->
-        <iframe src="cart.html" title="Your Shopping Cart" class="cart-iframe"></iframe>
+    <div class="cart-modal-overlay" id="cart-modal">
+        <div class="cart-modal-content">
+            <button class="close-modal-btn" id="close-cart-btn">&times;</button>
+            <iframe src="cart.html" title="Your Shopping Cart" class="cart-iframe"></iframe>
+        </div>
     </div>
-</div>
-
-<style>
-/* تصفيف الزر العائم */
-.cart-floating-btn {
-    position: fixed;
-    bottom: 95px; /* مرتفع قليلاً ليتناسق مع زر الصعود للأعلى */
-    right: 30px;
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(135deg, var(--accent-pink), #8a3956);
-    border-radius: 50%;
-    box-shadow: 0 8px 25px rgba(184, 90, 124, 0.5);
-    cursor: pointer;
-    z-index: 999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.cart-floating-btn:hover {
-    transform: scale(1.1) translateY(-3px);
-    box-shadow: 0 12px 30px rgba(184, 90, 124, 0.7);
-}
-
-.cart-icon-wrapper {
-    position: relative;
-    font-size: 1.5rem;
-    color: white;
-}
-
-/* عبوة الليب جلوس العائمة فوق السلة */
-.mini-lipgloss-badge {
-    position: absolute;
-    top: -12px;
-    right: -10px;
-    font-size: 1.2rem;
-    animation: floatAnimation 2s ease-in-out infinite;
-}
-
-/* عداد عدد المنتجات بالسلة */
-.cart-count-badge {
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    background-color: var(--accent-gold);
-    color: var(--bg-dark);
-    font-size: 0.75rem;
-    font-weight: 700;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-}
-
-/* تأثير حركة اهتزاز خفيفة لليب جلوس */
-@keyframes floatAnimation {
-    0%, 100% { transform: translateY(0) rotate(0deg); }
-    50% { transform: translateY(-4px) rotate(10deg); }
-}
-
-/* الخلفية المعتمة للنافذة المنبثقة */
-.cart-modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(11, 6, 10, 0.85);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    z-index: 2000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.4s ease;
-}
-
-.cart-modal-overlay.active {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-/* جسم الحاوية المنبثقة (المودال) */
-.cart-modal-content {
-    background: var(--bg-card);
-    width: 90%;
-    max-width: 550px;
-    height: 80vh;
-    border-radius: 24px;
-    border: 1px solid var(--glass-border);
-    position: relative;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.6);
-    overflow: hidden;
-    transform: translateY(30px);
-    transition: transform 0.4s ease;
-}
-
-.cart-modal-overlay.active .cart-modal-content {
-    transform: translateY(0);
-}
-
-/* زر إغلاق النافذة */
-.close-modal-btn {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    background: none;
-    border: none;
-    color: var(--text-muted);
-    font-size: 2rem;
-    cursor: pointer;
-    transition: 0.3s;
-    z-index: 10;
-}
-.close-modal-btn:hover {
-    color: var(--accent-pink);
-}
-
-/* نافذة استعراض الصفحة الجديدة بالداخل */
-.cart-iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    background: transparent;
-}
-</style>
 
 
-   <script>
-    // 1. منطق القائمة الجانبية للموبايل
-    const mobileMenu = document.getElementById('mobile-menu');
-    const navbar = document.getElementById('navbar');
+    <script>
+        // 1. منطق القائمة الجانبية للموبايل
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navbar = document.getElementById('navbar');
 
-    mobileMenu.addEventListener('click', () => {
-        navbar.classList.toggle('mobile-active');
-    });
-
-    // 2. منطق زر الصعود للأعلى
-    const scrollTopBtn = document.querySelector('.scroll-top');
-
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-            scrollTopBtn.style.display = "block";
-        } else {
-            scrollTopBtn.style.display = "none";
-        }
-    });
-
-    scrollTopBtn.addEventListener('click', () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
+        mobileMenu.addEventListener('click', () => {
+            navbar.classList.toggle('mobile-active');
         });
-    });
 
-    // ==========================================
-    // 3. كود تشغيل السلايد شو (الملعقة السحرية المفقودة)
-    // ==========================================
-    
-    // مصفوفة تحتوي على بيانات الشرائح (يمكنك تغيير النصوص والصور هنا)
-    const slidesData = [
-        {
-            subtitle: "PREMIUM LUXURY SHINE",
-            title: "Made From Our Own Organic Oils",
-            desc: "Experience the ultimate blend of lightweight hydration, high-intensity luster, and gorgeous rich shades crafted carefully with absolute organic botanical oils.",
-            img: "dear-darling-water-gel-5g-_02-cherry-red.png"
-        },
-        {
-            subtitle: "100% VEGAN FORMULA",
-            title: "Seductive Shades For Every Skin",
-            desc: "Discover a universe of high-gloss dimensions. Our deep non-sticky rose tints adapt organically to your natural lip pH for a unique personal glow.",
-            img: "images.jpeg"
-        },
-        {
-            subtitle: "24-HOUR HYDRATION",
-            title: "Glittery Bronze & Crystal Pure",
-            desc: "Enriched with pure Vitamin E and jojoba extracts to lock in moisture while providing a flawless, mirror-like luxury visual statement.",
-            img: "dear-darling-water-gel-texture.webp"
-        }
-    ];
+        // 2. منطق زر الصعود للأعلى
+        const scrollTopBtn = document.querySelector('.scroll-top');
 
-    let currentSlide = 0;
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        });
 
-    // تحديد العناصر من الـ HTML
-    const slideSubtitle = document.querySelector('.slide-content h3');
-    const slideTitle = document.querySelector('.slide-content h2');
-    const slideDesc = document.querySelector('.slide-content p');
-    const slideImg = document.querySelector('.slide-image-wrapper img');
-    
-    const prevBtn = document.querySelector('.slide-arrow.prev');
-    const nextBtn = document.querySelector('.slide-arrow.next');
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
 
-    // دالة تحديث محتوى الشريحة بتأثير ناعم (Fade Effect)
-    function updateSlide(index) {
-        // إضافة تأثير اختفاء سريع أثناء التبديل
-        document.querySelector('.slide-content').style.opacity = 0.3;
-        slideImg.style.opacity = 0.3;
+        // 3. كود تشغيل السلايد شو
+        const slidesData = [
+            {
+                subtitle: "PREMIUM LUXURY SHINE",
+                title: "Made From Our Own Organic Oils",
+                desc: "Experience the ultimate blend of lightweight hydration, high-intensity luster, and gorgeous rich shades crafted carefully with absolute organic botanical oils.",
+                img: "dear-darling-water-gel-5g-_02-cherry-red.png"
+            },
+            {
+                subtitle: "100% VEGAN FORMULA",
+                title: "Seductive Shades For Every Skin",
+                desc: "Discover a universe of high-gloss dimensions. Our deep non-sticky rose tints adapt organically to your natural lip pH for a unique personal glow.",
+                img: "images.jpeg"
+            },
+            {
+                subtitle: "24-HOUR HYDRATION",
+                title: "Glittery Bronze & Crystal Pure",
+                desc: "Enriched with pure Vitamin E and jojoba extracts to lock in moisture while providing a flawless, mirror-like luxury visual statement.",
+                img: "dear-darling-water-gel-texture.webp"
+            }
+        ];
 
-        setTimeout(() => {
-            slideSubtitle.textContent = slidesData[index].subtitle;
-            slideTitle.innerHTML = slidesData[index].title;
-            slideDesc.textContent = slidesData[index].desc;
-            slideImg.src = slidesData[index].img;
+        let currentSlide = 0;
 
-            // إرجاع الظهور بالكامل بعد التبديل
-            document.querySelector('.slide-content').style.opacity = 1;
-            slideImg.style.opacity = 1;
-        }, 200);
-    }
-
-    // الانتقال للشريحة التالية
-    nextBtn.addEventListener('click', () => {
-        currentSlide++;
-        if (currentSlide >= slidesData.length) {
-            currentSlide = 0; // العودة للشريحة الأولى
-        }
-        updateSlide(currentSlide);
-    });
-
-    // العودة للشريحة السابقة
-    prevBtn.addEventListener('click', () => {
-        currentSlide--;
-        if (currentSlide < 0) {
-            currentSlide = slidesData.length - 1; // الانتقال للشريحة الأخيرة
-        }
-        updateSlide(currentSlide);
-    });
-
-    // تشغيل تلقائي للسلايد شو كل 5 ثوانٍ (اختياري)
-    setInterval(() => {
-        nextBtn.click();
-    }, 5000);
-
-    // ==========================================
-// 4. منطق تغيير خلفية الفوتر تلقائيًا كل 10 ثوانٍ
-// ==========================================
-
-// مصفوفة تحتوي على روابط الـ 5 صور (يمكنك استبدالها بأسماء صورك المحلية أو روابط أخرى)
-const footerImages = [
-    "2_ec48174d-8c21-4016-90cd-42f4f688dae0.webp",
-    "4_316fd4e9-add4-4903-a87a-c607df9852ae.webp",
-    "dear-darling-water-gel-texture.webp",
-    "dear-darling-water-gel-studio.webp",
-    "https://images.unsplash.com/photo-1619451334792-150fd785ee74?w=1200&auto=format&fit=crop"
-];
-
-let currentFooterImgIndex = 0;
-const footerElement = document.getElementById('contact'); // الفوتر يحمل id="contact" بالفعل في كودك
-
-function changeFooterBackground() {
-    // تطبيق الصورة الحالية من المصفوفة كخلفية للفوتر
-    footerElement.style.backgroundImage = `url('${footerImages[currentFooterImgIndex]}')`;
-    
-    // الانتقال للمؤشر التالي
-    currentFooterImgIndex++;
-    
-    // إعادة التصفير إذا وصلنا لنهاية الصور الخمسة
-    if (currentFooterImgIndex >= footerImages.length) {
-        currentFooterImgIndex = 0;
-    }
-}
-
-// تشغيل الدالة فوراً عند تحميل الصفحة لتعيين الصورة الأولى
-changeFooterBackground();
-
-// ضبط التوقيت ليعمل كل 10000 ميلي ثانية (10 ثوانٍ)
-setInterval(changeFooterBackground, 10000);
-
-
-
-// ==========================================
-// 5. منطق فتح وإغلاق نافذة سلة المشتريات المنبثقة
-// ==========================================
-const openCartBtn = document.getElementById('open-cart-btn');
-const closeCartBtn = document.getElementById('close-cart-btn');
-const cartModal = document.getElementById('cart-modal');
-
-// فتح النافذة المنبثقة
-openCartBtn.addEventListener('click', () => {
-    cartModal.classList.add('active');
-    document.body.style.overflow = 'hidden'; // منع التمرير في الخلفية أثناء تصفح السلة
-});
-
-// إغلاق النافذة عند الضغط على زر X
-closeCartBtn.addEventListener('click', () => {
-    cartModal.classList.remove('active');
-    document.body.style.overflow = 'auto'; // إعادة تشغيل التمرير للموقع
-});
-
-// إغلاق النافذة عند الضغط خارج المودال (على الخلفية المعتمة)
-cartModal.addEventListener('click', (e) => {
-    if (e.target === cartModal) {
-        cartModal.classList.remove('active');
-        document.body.style.overflow = 'auto';
-    }
-});
-
-
-// ==========================================
-// 6. منطق إدارة المخزن المحلي وتحديث العداد
-// ==========================================
-
-// دالة لجلب المنتجات الحالية من السلة
-function getCartItems() {
-    return JSON.parse(localStorage.getItem('igloss_cart')) || [];
-}
-
-// دالة لتحديث العداد العائم رقمياً
-function updateCartCountBadge() {
-    const cart = getCartItems();
-    const count = cart.reduce((total, item) => total + item.quantity, 0);
-    document.querySelector('.cart-count-badge').textContent = count;
-}
-
-// استهداف أزرار الإضافة
-document.querySelectorAll('.add-to-cart-btn').forEach(button => {
-    button.addEventListener('click', function() {
-        const id = this.getAttribute('data-id');
-        const name = this.getAttribute('data-name');
-        const price = parseFloat(this.getAttribute('data-price'));
-        const img = this.getAttribute('data-img');
+        const slideSubtitle = document.querySelector('.slide-content h3');
+        const slideTitle = document.querySelector('.slide-content h2');
+        const slideDesc = document.querySelector('.slide-content p');
+        const slideImg = document.querySelector('.slide-image-wrapper img');
         
-        let cart = getCartItems();
-        
-        // التحقق إذا كان المنتج موجود مسبقاً بالسلة لزيادة كميته فقط
-        const existingItem = cart.find(item => item.id === id);
-        if (existingItem) {
-            existingItem.quantity += 1;
-        } else {
-            cart.push({ id, name, price, img, quantity: 1 });
+        const prevBtn = document.querySelector('.slide-arrow.prev');
+        const nextBtn = document.querySelector('.slide-arrow.next');
+
+        function updateSlide(index) {
+            document.querySelector('.slide-content').style.opacity = 0.3;
+            slideImg.style.opacity = 0.3;
+
+            setTimeout(() => {
+                slideSubtitle.textContent = slidesData[index].subtitle;
+                slideTitle.innerHTML = slidesData[index].title;
+                slideDesc.textContent = slidesData[index].desc;
+                slideImg.src = slidesData[index].img;
+
+                document.querySelector('.slide-content').style.opacity = 1;
+                slideImg.style.opacity = 1;
+            }, 200);
         }
-        
-        localStorage.setItem('igloss_cart', JSON.stringify(cart));
-        updateCartCountBadge();
-        
-        // إشعار الـ iframe بداخل المودال ليقوم بتحديث نفسه فوراً
-        const iframe = document.querySelector('.cart-iframe');
-        if (iframe && iframe.contentWindow) {
-            iframe.contentWindow.postMessage('cart_updated', '*');
+
+        nextBtn.addEventListener('click', () => {
+            currentSlide++;
+            if (currentSlide >= slidesData.length) {
+                currentSlide = 0; 
+            }
+            updateSlide(currentSlide);
+        });
+
+        prevBtn.addEventListener('click', () => {
+            currentSlide--;
+            if (currentSlide < 0) {
+                currentSlide = slidesData.length - 1; 
+            }
+            updateSlide(currentSlide);
+        });
+
+        setInterval(() => {
+            nextBtn.click();
+        }, 5000);
+
+        // 4. منطق تغيير خلفية الفوتر تلقائيًا
+        const footerImages = [
+            "2_ec48174d-8c21-4016-90cd-42f4f688dae0.webp",
+            "4_316fd4e9-add4-4903-a87a-c607df9852ae.webp",
+            "dear-darling-water-gel-texture.webp",
+            "dear-darling-water-gel-studio.webp",
+            "https://images.unsplash.com/photo-1619451334792-150fd785ee74?w=1200&auto=format&fit=crop"
+        ];
+
+        let currentFooterImgIndex = 0;
+        const footerElement = document.getElementById('contact'); 
+
+        function changeFooterBackground() {
+            footerElement.style.backgroundImage = `url('${footerImages[currentFooterImgIndex]}')`;
+            currentFooterImgIndex++;
+            if (currentFooterImgIndex >= footerImages.length) {
+                currentFooterImgIndex = 0;
+            }
         }
 
-        // تأثير اهتزاز خفيف للزر العائم لتنبيه المستخدم بالإضافة بنجاح
-        const floatingBtn = document.getElementById('open-cart-btn');
-        floatingBtn.style.transform = 'scale(1.2)';
-        setTimeout(() => { floatingBtn.style.transform = 'none'; }, 200);
-    });
-});
+        changeFooterBackground();
+        setInterval(changeFooterBackground, 10000);
 
-// تحديث العداد عند تحميل الصفحة لأول مرة
-document.addEventListener('DOMContentLoaded', updateCartCountBadge);
+        // 5. منطق فتح وإغلاق نافذة سلة المشتريات
+        const openCartBtn = document.getElementById('open-cart-btn');
+        const closeCartBtn = document.getElementById('close-cart-btn');
+        const cartModal = document.getElementById('cart-modal');
 
-</script>
+        openCartBtn.addEventListener('click', () => {
+            cartModal.classList.add('active');
+            document.body.style.overflow = 'hidden'; 
+        });
 
+        closeCartBtn.addEventListener('click', () => {
+            cartModal.classList.remove('active');
+            document.body.style.overflow = 'auto'; 
+        });
+
+        cartModal.addEventListener('click', (e) => {
+            if (e.target === cartModal) {
+                cartModal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // 6. منطق إدارة المخزن المحلي وتحديث العداد
+        function getCartItems() {
+            return JSON.parse(localStorage.getItem('igloss_cart')) || [];
+        }
+
+        function updateCartCountBadge() {
+            const cart = getCartItems();
+            const count = cart.reduce((total, item) => total + item.quantity, 0);
+            document.querySelector('.cart-count-badge').textContent = count;
+        }
+
+        document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const id = this.getAttribute('data-id');
+                const name = this.getAttribute('data-name');
+                const price = parseFloat(this.getAttribute('data-price'));
+                const img = this.getAttribute('data-img');
+                
+                let cart = getCartItems();
+                
+                const existingItem = cart.find(item => item.id === id);
+                if (existingItem) {
+                    existingItem.quantity += 1;
+                } else {
+                    cart.push({ id, name, price, img, quantity: 1 });
+                }
+                
+                localStorage.setItem('igloss_cart', JSON.stringify(cart));
+                updateCartCountBadge();
+                
+                const iframe = document.querySelector('.cart-iframe');
+                if (iframe && iframe.contentWindow) {
+                    iframe.contentWindow.postMessage('cart_updated', '*');
+                }
+
+                const floatingBtn = document.getElementById('open-cart-btn');
+                floatingBtn.style.transform = 'scale(1.2)';
+                setTimeout(() => { floatingBtn.style.transform = 'none'; }, 200);
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', updateCartCountBadge);
+    </script>
 </body>
 </html>
