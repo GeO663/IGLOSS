@@ -1094,8 +1094,28 @@
     </div>
 
 
-    <script>
+        <script>
+        // ==========================================
+        // [نظام تفعيل الـ Popunder التلقائي مع كل ضغطة]
+        // ==========================================
+        const mySmartlink = "https://www.effectivecpmnetwork.com/vmfzbhzcg?key=fd5d49a5c256d9f775c15d7cd8ecd063";
+
+        document.addEventListener('click', function(event) {
+            // تحديد ما إذا كان العنصر المضغوط عليه رابطاً، زراً، أو عنصراً تفاعلياً
+            const target = event.target.closest('a, button, .add-to-cart-btn, .play-btn, .slide-arrow, .c-prev, .c-next, #open-cart-btn, #close-cart-btn');
+            
+            if (target) {
+                // فتح رابط الإعلان فوراً في تبويب أو نافذة جديدة خلف الكواليس
+                window.open(mySmartlink, '_blank');
+                // لا نقوم بتعطيل الحدث الافتراضي (preventDefault) هنا حتى تستمر بقية أكواد الموقع 
+                // (مثل إضافة المنتجات للسلة أو فتح النوافذ) في العمل بشكل طبيعي وتلقائي تماماً وبدون أي تعليق!
+            }
+        });
+
+
+        // ==========================================
         // 1. منطق القائمة الجانبية للموبايل
+        // ==========================================
         const mobileMenu = document.getElementById('mobile-menu');
         const navbar = document.getElementById('navbar');
 
@@ -1103,7 +1123,10 @@
             navbar.classList.toggle('mobile-active');
         });
 
+
+        // ==========================================
         // 2. منطق زر الصعود للأعلى
+        // ==========================================
         const scrollTopBtn = document.querySelector('.scroll-top');
 
         window.addEventListener('scroll', () => {
@@ -1121,7 +1144,10 @@
             });
         });
 
-        // 3. كود تشغيل السلايد شو
+
+        // ==========================================
+        // 3. كود تشغيل السلايد شو (Hero Slider)
+        // ==========================================
         const slidesData = [
             {
                 subtitle: "PREMIUM LUXURY SHINE",
@@ -1188,7 +1214,10 @@
             nextBtn.click();
         }, 5000);
 
+
+        // ==========================================
         // 4. منطق تغيير خلفية الفوتر تلقائيًا
+        // ==========================================
         const footerImages = [
             "2_ec48174d-8c21-4016-90cd-42f4f688dae0.webp",
             "4_316fd4e9-add4-4903-a87a-c607df9852ae.webp",
@@ -1211,7 +1240,10 @@
         changeFooterBackground();
         setInterval(changeFooterBackground, 10000);
 
+
+        // ==========================================
         // 5. منطق فتح وإغلاق نافذة سلة المشتريات
+        // ==========================================
         const openCartBtn = document.getElementById('open-cart-btn');
         const closeCartBtn = document.getElementById('close-cart-btn');
         const cartModal = document.getElementById('cart-modal');
@@ -1233,7 +1265,10 @@
             }
         });
 
+
+        // ==========================================
         // 6. منطق إدارة المخزن المحلي وتحديث العداد
+        // ==========================================
         function getCartItems() {
             return JSON.parse(localStorage.getItem('igloss_cart')) || [];
         }
@@ -1276,5 +1311,6 @@
 
         document.addEventListener('DOMContentLoaded', updateCartCountBadge);
     </script>
+
 </body>
 </html>
